@@ -29,7 +29,7 @@ const modelSchema = yup.object({
         last: yup.string().required('Name is required')
     }),
     dateOfBirth: yup.date()
-        .max(new Date(), 'You can be born in the future!')
+        .max(new Date(), 'You can\'t be born in the future!')
 })
 
 // ...in a component
